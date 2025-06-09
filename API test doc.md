@@ -1,3 +1,32 @@
+# Product Placement Integration Test
+
+## What does this script do?
+This script verifies whether the product placement system in stores is working correctly. It creates a test placement and checks if it's properly displayed in the system.
+
+## How it works?
+1. The script authenticates in the admin panel (retrieves token and cookies)
+2. Checks how many products are already placed in stores (parsing via Beautiful Soup)
+3. Creates a new placement of a random product in a random store
+4. Verifies the placement appears in the system via API
+5. Checks if the placement is displayed in the admin panel
+6. Compares the product count before and after placement
+
+## Test Coverage
+- Admin panel authentication functionality
+- Placement creation via API
+- Correct display of placements in admin panel
+- Matching counts between created placements and system records
+
+## Test Data
+The script includes sample stores and products:
+- 4 stores
+- 6 different products
+
+## How to run?
+```bash
+python test_placement_new.py
+```
+
 # Интеграционный тест выкладки товаров
 
 ## Что делает этот скрипт?
