@@ -1,0 +1,57 @@
+# UI Automated Test: Product Placement Flow
+
+This test automates the product placement process in a mobile application, logs all actions, and displays the total execution time at the end.
+
+## Test Objective
+Verify the basic happy path flow for product placement functionality.
+
+## Test Flow
+
+1. Open the menu and navigate to "Placement" section
+2. Enter the barcode `4601887034582`
+3. Repeat the following actions `n` times with random barcodes:
+   - Enter barcode
+   - Enter random quantity (1-100)
+   - Enter random expiration date (from today to 1 year in future)
+   - Submit data to server
+4. Verify success status for each submission via toast messages:
+   - "Placed products successfully submitted to server" - Success
+   - "Internal server error" - Failure
+
+## Expected Results
+
+- All products should be successfully submitted to the server
+- Test should fail on any submission error
+- Console should display the status of each submission
+- Total execution time should be displayed at the end
+
+
+# UI Автотест: Процесс выкладки товаров
+
+Данный тест автоматизирует процесс выкладки товаров в мобильном приложении, логирует все действия и выводит общее время выполнения.
+
+## Цель теста
+Проверка основного позитивного сценария выкладки товаров.
+
+## Шаги теста
+
+1. Открыть меню и перейти в раздел "Выкладка"
+2. Ввести штрих-код `4601887034582`
+3. Повторить следующие действия `n` раз со случайными штрих-кодами:
+   - Ввод штрих-кода
+   - Ввод случайного количества (1-100)
+   - Ввод случайной даты годности (от текущей даты до +1 года)
+   - Отправка данных на сервер
+4. Проверить статус каждой отправки через тосты:
+   - "Выложенные продукты успешно отправлены на сервер" - Успех
+   - "Внутренняя ошибка сервера" - Ошибка
+
+## Ожидаемые результаты
+
+- Все товары должны быть успешно отправлены на сервер
+- Тест должен падать при любой ошибке отправки
+- В консоли должен отображаться статус каждой отправки
+- В конце должно выводиться общее время выполнения
+
+## Техническая реализация
+Appium + Python + Uiautomator2Driver
