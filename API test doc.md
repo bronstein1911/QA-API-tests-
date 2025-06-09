@@ -1,4 +1,4 @@
-# Product Placement Integration Test
+# Product Placement Integration UI/API Test
 
 ## What does this script do?
 This script verifies whether the product placement system in stores is working correctly. It creates a test placement and checks if it's properly displayed in the system.
